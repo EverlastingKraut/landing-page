@@ -4,11 +4,22 @@ body {
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    
-
 }
 
+/* Force lists and links to be normal */
+ul {
+    padding-inline-start: 0;
+}
 
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
 
 .header, .hero, .footer {
     background-color: #1F2937;
@@ -19,13 +30,42 @@ body {
     background-color: #E5E7EB ;
 }
 
+/* Make every immediate child of body flexy... */
 body > div {
+    box-sizing: border-box;
+    padding: 15px;
     flex: 1 1 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* but exclude these to grow */
 .header, .footer {
     flex: 0 0 90px;
 }
+
+
+
+ /* ----Here begins the explcit header styling */
+.header {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+
+.header > ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-between;
+    flex: 0 1 1200px;
+    align-items: center;
+
+}
+
+.header-logo {
+    margin-right: auto;
+    font-size: 30px;
+    font-weight: bold;
+}
+
