@@ -6,6 +6,8 @@ body {
     justify-content: space-between;
 }
 
+
+
 /* Force lists and links to be normal */
 ul {
     padding-inline-start: 0;
@@ -21,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-.header, .hero, .footer {
+.header, .hero-container, .footer {
     background-color: #1F2937;
     color: white;
 }
@@ -47,7 +49,7 @@ body > div {
 
 
 
- /* ----Here begins the explicit header styling */
+ /* ----Here begins the explicit styling inside the header */
 .header {
     box-sizing: border-box;
     padding: 15px;
@@ -69,9 +71,20 @@ body > div {
     font-weight: bold;
 }
 
-/* ----Here begins the explicit styling inside the hero */
+/* ----Here begins the explicit styling inside the hero-container */
+.hero-container {
+    display: flex;
+    
+}
+
 .hero {
+    box-sizing: border-box;
+    justify-content: space-between;
+    flex: 0 1 1200px;
+    display: flex;
     gap: 30px;
+    align-items: stretch;
+
 }
 
 
@@ -80,13 +93,29 @@ body > div {
     flex-direction: column;
     gap: 8px;
     justify-content: space-between;
-    height: 100%;
 }
 
 .hero > .left > * {
     margin: 0;
     padding: 0;
 }
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero > .left > button {
+    width: 120px;
+    height: 35px;
+    background-color: rgb(100, 138, 209);
+    color: white;
+    font-size: bold;
+    border-width: 0;
+    border-radius: 5px;
+}
+
+
 
 
 .hero > .right {
@@ -95,3 +124,5 @@ body > div {
     height: 200px;
     flex-shrink: 0;
 }
+
+
