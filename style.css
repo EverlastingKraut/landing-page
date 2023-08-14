@@ -84,6 +84,8 @@ body > div {
     display: flex;
     gap: 30px;
     align-items: stretch;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
 }
 
@@ -123,6 +125,66 @@ body > div {
     width: 300px;
     height: 200px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
+/*  ---- Here begins the explicit styling inside the first-container */
+
+.first-container {
+    display: flex;
+    
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card {
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-frame {
+    height: 200px;
+    width: 200px;
+    flex: 0 0 auto;
+    
+    border-width: 3px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: rgb(101, 164, 247);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > p {
+    text-align: center;
+}
