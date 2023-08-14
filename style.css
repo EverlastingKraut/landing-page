@@ -47,7 +47,7 @@ body > div {
 
 
 
- /* ----Here begins the explcit header styling */
+ /* ----Here begins the explicit header styling */
 .header {
     box-sizing: border-box;
     padding: 15px;
@@ -69,3 +69,29 @@ body > div {
     font-weight: bold;
 }
 
+/* ----Here begins the explicit styling inside the hero */
+.hero {
+    gap: 30px;
+}
+
+
+.hero > .left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.hero > .left > * {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero > .right {
+    background-color: gray;
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+}
