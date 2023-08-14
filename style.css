@@ -188,3 +188,28 @@ h2 {
 .card > p {
     text-align: center;
 }
+
+/* ----Here begins the styling inside second-container */
+
+.second-container {
+    display: flex;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 950px;
+    margin: 40px;
+}
+
+.second > .quote {
+    font-style: italic;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.second > .quoted {
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 30px;
+}
