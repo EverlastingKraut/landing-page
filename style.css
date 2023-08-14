@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+
+
+.header, .hero, .footer {
+    background-color: #1F2937;
+    color: white;
+}
+
+.second-container {
+    background-color: #E5E7EB ;
+}
+
+body > div {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header, .footer {
+    flex: 0 0 90px;
+}
