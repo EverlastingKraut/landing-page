@@ -29,7 +29,19 @@ a {
 }
 
 .second-container {
-    background-color: #E5E7EB ;
+    /* background-color: #E5E7EB ; */
+
+    /* ---- Parallax-like background beginning. (Solely archived in this class!!! Wow) */
+    background-image: url(./images/dominik-sostmann-NPlyVfeYp8I-unsplash.jpg);
+    background-size: cover;
+    /* object-fit: cover; */
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(1.1);
+    /* ---- Parallax-like background end */
 }
 
 /* Make every immediate child of body flexy... */
@@ -200,6 +212,7 @@ h2 {
     flex-direction: column;
     flex: 0 1 950px;
     margin: 40px;
+    color: white;
 }
 
 .second > .quote {
